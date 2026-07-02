@@ -139,7 +139,7 @@ same fixing-vs-market decomposition on the dinar's euro leg.
 
 Group project for **FIN 460 — Dynamic Asset Pricing Theory**, Tunis Business School, supervised by
 Dr. Eymen Errais and Dr. Bechir Bouzid. Authors: Mustapha Aziz Laroussi, Salma Regaieg, Yassine
-Chakroun, Mohamed Mechri. *(Individual contribution to be detailed by the author.)*
+Chakroun, Mohamed Mechri.
 
 📄 [Full report](report/report.pdf)
 
