@@ -1,0 +1,105 @@
+{
+  "n_obs": 1260,
+  "train": 1008,
+  "test": 252,
+  "test_start": "2024-04-02",
+  "test_end": "2025-04-07",
+  "ols_weights": {
+    "EUR": -0.3499,
+    "GBP": -0.0361,
+    "JPY": 0.0199
+  },
+  "ols_fixing": {
+    "RMSE": 0.0074,
+    "MAE": 0.0054,
+    "Corr": 0.9888,
+    "DirAcc(%)": 55.3785,
+    "MAPE(%)": 0.1708
+  },
+  "sgd_final_weights": [
+    -0.2329,
+    -0.1221,
+    0.0667
+  ],
+  "rf_target_weight_std": 0.7278,
+  "kalman_qr": [
+    1e-06,
+    0.001
+  ],
+  "kalman_fixing": {
+    "RMSE": 0.0087,
+    "MAE": 0.0064,
+    "Corr": 0.9847,
+    "DirAcc(%)": 53.7849,
+    "MAPE(%)": 0.2031
+  },
+  "garch_best": "GARCH(1, 1)",
+  "kalman_garch_fixing": {
+    "RMSE": 0.0116,
+    "MAE": 0.0087,
+    "Corr": 0.973,
+    "DirAcc(%)": 49.004,
+    "MAPE(%)": 0.2761
+  },
+  "spread_ar": {
+    "RMSE": 0.00653,
+    "MAE": 0.00505,
+    "Corr": 0.08284,
+    "DirAcc(%)": 34.66135
+  },
+  "spread_arimax": {
+    "RMSE": 0.00451,
+    "MAE": 0.00348,
+    "Corr": 0.50584,
+    "DirAcc(%)": 56.1753
+  },
+  "spread_rf": {
+    "RMSE": 0.00578,
+    "MAE": 0.00448,
+    "Corr": 0.04047,
+    "DirAcc(%)": 40.63745
+  },
+  "spread_rf_importance": {
+    "spread_lag1": 0.826,
+    "spread_lag2": 0.097,
+    "spread_lag3": 0.051,
+    "spread_vol5": 0.026
+  },
+  "interbank_base": {
+    "RMSE": 0.0075,
+    "MAE": 0.0054,
+    "Corr": 0.9883,
+    "DirAcc(%)": 63.3466,
+    "MAPE(%)": 0.1724
+  },
+  "interbank_hybrid": {
+    "RMSE": 0.0075,
+    "MAE": 0.0054,
+    "Corr": 0.9882,
+    "DirAcc(%)": 62.1514,
+    "MAPE(%)": 0.1724
+  },
+  "rw_fixing": {
+    "RMSE": 0.0101,
+    "MAE": 0.0071,
+    "Corr": 0.9788,
+    "DirAcc(%)": 47.8088,
+    "MAPE(%)": 0.2274
+  },
+  "rw_interbank": {
+    "RMSE": 0.009,
+    "MAE": 0.0064,
+    "Corr": 0.9829,
+    "DirAcc(%)": 53.3865,
+    "MAPE(%)": 0.2048
+  },
+  "divergence": {
+    "mean_spread": 0.01153,
+    "std_spread": 0.02111,
+    "max_spread": 0.1173,
+    "pct_days_positive": 62.4,
+    "return_corr": 0.6625
+  },
+  "mean_bidask_bp": 9.98,
+  "sensitivity_base_mape": 0.1705
+}
