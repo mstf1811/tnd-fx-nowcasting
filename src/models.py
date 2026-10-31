@@ -30,8 +30,8 @@ def kalman_filter(X, y, q, r, intercept=True, q_intercept=None, p0=0.1):
     for t in range(n):
         P = P + Q                                    # predict step
         H = (np.append(X[t], 1.0) if intercept else X[t]).reshape(1, dim)
-        pred[t] = float(H.dot(theta))                # one-step-ahead, prior state only
-        S = float(H.dot(P).dot(H.T)) + rt[t]
+        pred[t] = H.dot(theta).item()                # one-step-ahead, prior state only
+        S = H.dot(P).dot(H.T).item() + rt[t]
         K = P.dot(H.T) / S
         theta = theta + K.flatten() * (y[t] - H.dot(theta))
         P = P - K.dot(H).dot(P)
