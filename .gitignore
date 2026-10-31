@@ -22,5 +22,5 @@ __MACOSX/
 *.bbl
 *.blg
 
-# Private audit file - not part of the deliverable
+# Local notes
 AUDIT_NOTES.md
